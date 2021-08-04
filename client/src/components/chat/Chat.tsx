@@ -10,10 +10,11 @@ export default function Chat({location}: any){
     useEffect(() => {
         const {name, room} = queryString.parse(location.search)
         
+        console.log(location.search)
         const socket = io(ENDPOINT)
         setName(name);
         setRoom(room);
-
+        console.log(socket)
     })
     return (
         <div>

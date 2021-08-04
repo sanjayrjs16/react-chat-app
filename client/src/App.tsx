@@ -9,7 +9,7 @@ function App() {
   return (
    <Router>
      <Route path="/" exact  component={Join} />
-     <Route path="/chat" render={() => <Chat location={window.location} />} />
+     <Route path="/chat" component={Chat} />
    </Router>
   );
 }
